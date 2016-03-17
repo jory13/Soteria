@@ -1388,7 +1388,7 @@ var/list/ghostteleportlocs = list()
 
 /area/security/tactical
 	name = "\improper Tactical Equipment"
-	icon_state = "Tactical"
+	icon_state = "Warden"
 
 
 /*
