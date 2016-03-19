@@ -157,8 +157,8 @@
 	corpsegloves = /obj/item/clothing/gloves/yellow
 	corpsehelmet = /obj/item/clothing/head/hardhat
 	corpseid = 1
-	corpseidjob = "Ship Engineer"
-	corpseidaccess = "Ship Engineer"
+	corpseidjob = "Station Engineer"
+	corpseidaccess = "Station Engineer"
 
 /obj/effect/landmark/corpse/engineer/rig
 	corpsesuit = /obj/item/clothing/suit/space/rig
