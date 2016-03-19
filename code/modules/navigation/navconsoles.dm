@@ -107,7 +107,7 @@
 	if(movetarget)
 		locked = 1
 		onPlanet = 0
-		command_alert("Movement Initated. Destination:" + movetarget.name+ ". All hands please prepare for slipspace transit. ETD: 30 seconds.", "NEV Unity Autopilot")
+		command_alert("Movement Initated. Destination:" + movetarget.name+ ". All hands please prepare for slipspace transit. ETD: 30 seconds.", "NEV Soteria Autopilot")
 		power_failure(0)
 		sleep(300)
 		power_restore(0)
@@ -130,7 +130,7 @@
 		createAwayMission()
 		awayZLevel++
 		onPlanet = 1
-		command_alert("All hands please prepare for arrival. ETA: 30 seconds", "NEV Unity Autopilot")
+		command_alert("All hands please prepare for arrival. ETA: 30 seconds", "NEV Soteria Autopilot")
 		sleep(300)
 		shakeAll()
 		for(var/obj/machinery/power/cathode/H in world)
@@ -138,7 +138,7 @@
 		for(var/turf/space/x in world)
 			if(!istype(x, /turf/space/transit))
 				x.icon_state = "x[((x.x + x.y) ^ ~(x.x * x.y) + x.z) % 25]"
-		command_alert("Movement Complete. The ship has reached "+ movetarget.name+ "", "NEV Unity Autopilot")
+		command_alert("Movement Complete. The ship has reached "+ movetarget.name+ "", "NEV Soteria Autopilot")
 		locked = 0
 
 /obj/machinery/computer/navigation/proc/move(var/datum/system/movetarget)
@@ -148,11 +148,11 @@
 	if(movetarget)
 		locked = 1
 		onPlanet = 0
-		command_alert("Movement Initiated. Destination:"+ movetarget.name+ ". All hands please prepare for slipspace transit. ETD: 10 seconds.", "NEV Unity Autopilot")
+		command_alert("Movement Initiated. Destination:"+ movetarget.name+ ". All hands please prepare for slipspace transit. ETD: 10 seconds.", "NEV Soteria Autopilot")
 		power_failure(0)
 		sleep 300
 		power_restore(0)
-		command_alert("Movement Initiated. Destination:"+ movetarget.name+ ". All hands please prepare for arrival. ETA: 15 minutes.", "NEV Unity Autopilot")
+		command_alert("Movement Initiated. Destination:"+ movetarget.name+ ". All hands please prepare for arrival. ETA: 15 minutes.", "NEV Soteria Autopilot")
 		shakeAll()
 		for(var/obj/machinery/power/cathode/H in world)
 			H.detach_cable()
@@ -162,13 +162,13 @@
 //		for(var/mob/M in player_list)
 //			M << sound('sound/music/All Hands.ogg')
 		sleep 9000 //This will be 9000 eventually. (15min) - set to 10s for testing
-		command_alert("All hands please prepare for arrival. ETA: 30 seconds", "NEV Unity Autopilot")
+		command_alert("All hands please prepare for arrival. ETA: 30 seconds", "NEV Soteria Autopilot")
 		sleep(300)
 		shakeAll()
 		for(var/obj/machinery/power/cathode/H in world)
 			H.detach_cable()
 
-		command_alert("Movement Complete. The ship has reached "+ movetarget.name+ "", "NEV Unity Autopilot")
+		command_alert("Movement Complete. The ship has reached "+ movetarget.name+ "", "NEV Soteria Autopilot")
 		for(var/turf/space/x in world)
 			if(!istype(x, /turf/space/transit))
 				x.icon_state = "x[((x.x + x.y) ^ ~(x.x * x.y) + x.z) % 25]"

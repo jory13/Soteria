@@ -1,5 +1,5 @@
 /mob/verb/help_server()
-	set name = "About Unity"
+	set name = "About Soteria"
 	set category = "Help"
 	set src = usr
 
@@ -137,17 +137,17 @@
 
 	src << browse(dat, "window=about")
 	return
-	
 
-	
+
+
 /mob/living/carbon/human/verb/hold_breath()
 	set category = "IC"
 	set name = "Hold Breath"
 	set desc = "Hold your breath. Use again to start breathing."
-	
+
 	holdbreath = !holdbreath
 	if(holdbreath)
 		src <<  "You start holding your breath."
 	else
 		src << "You start breathing normally."
-	
+

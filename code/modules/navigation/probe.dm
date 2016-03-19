@@ -15,7 +15,7 @@
 	icon = 'icons/obj/computer.dmi'
 	icon_state = "comm_monitor"
 	name = "Probe Operation Console"
-	desc = "This console controls the Unity's long-distance probes!"
+	desc = "This console controls the Soteria's long-distance probes!"
 	var/datum/system/cursystem
 	var/datum/planet/curplanet
 	var/away = 0
